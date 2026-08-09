@@ -37,6 +37,7 @@ public class AvailableCharsetsMain {
         System.out.println("charset3 = " + charset3);
 
         // 시스템의 기본 Charset 조회 - 시스템이 기본적으로 사용하는 문자 집합
+        // 문자 집합을 따로 지정하지 않으면 기본으로 설정된 문자 집합이 사용됨
         Charset defaultCharset = Charset.defaultCharset();
         System.out.println("defaultCharset = " + defaultCharset);
     }
