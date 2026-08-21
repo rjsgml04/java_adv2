@@ -1,5 +1,6 @@
 package io.member;
 
+import io.member.impl.DataMemberRepository;
 import io.member.impl.FileMemberRepository;
 import io.member.impl.MemoryMemberRepository;
 
@@ -8,7 +9,9 @@ import java.util.Scanner;
 
 public class MemberConsoleMain {
     //private static final MemberRepository repository = new MemoryMemberRepository(); // 메모리 방식
-    private static final MemberRepository repository = new FileMemberRepository(); // 파일 저장/읽기 방식
+    //private static final MemberRepository repository = new FileMemberRepository(); // 파일 저장/읽기 방식
+    private static final MemberRepository repository = new DataMemberRepository(); // 객체 타입을 지정하여 사용하는 방식
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
