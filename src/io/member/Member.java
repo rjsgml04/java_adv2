@@ -1,6 +1,10 @@
 package io.member;
 
-public class Member {
+import java.io.Serializable;
+
+public class Member implements Serializable {
+    // 기능은 딱히 없고 직렬화 객체라는 의미로 사용
+   // 해당 인터페이스 없이 직렬화 시도하면 예외 발생
 
     private String id;
 
